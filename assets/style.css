@@ -1,8 +1,13 @@
 :root {
-  --c1: #970747;
+  --c1: #13445A;
   --c2: #FEF4E8;
-  --c3: #13445A;
-  --c4: #446878;
+  --c3: #446878;
+  --c4: #970747;
+
+  --c1RGB: rgb(151, 7, 71, 1.0);
+  --c2RGB: rgb(254, 244, 232, 1.0);
+  --c3RGB: rgb(19, 68, 90, 1.0);
+  --c4RGB: rgb(68, 104, 120, 1.0);
 }
 
 *,
@@ -17,104 +22,120 @@ body
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Comfortaa', cursive;
   background-color: var(--c2);
-  color: var(--c4);
+  color: var(--c3);
 }
 
+/* main {
+  min-height: 80vh;
+} */
+
 header {
+  width: 100%;
+  margin: 0;
   text-align: center;
-  padding: 20px;
-  padding-top: 0px;
+  padding: 15px;
   background-color: var(--c1);
   color: var(--c2);
 }
 
+footer {
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: var(--c1);
+  color: var(--c2);
+}
+
+.nav {
+  justify-content: center;
+  width:100%;
+}
+
+.nav-link, .navbar {
+  background-color: var(--c2);
+  color: var(--c3);
+  box-shadow: 0px 10px 10px var(--c2);
+}
+
+.navbar {
+  padding-bottom: 0;
+}
+
+#logo {
+  width: 50px;
+}
+
 #tagLine {
   text-align: center;
-  margin: 10px auto;
-  width: 60%;
-  font-size: .8rem;
+  margin: 0 auto;
+  width: 100%;
+  font-size: .9rem;
+  font-style: italic;
+  padding: 0;
 }
 
 .teamCardContainer {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 80%;
   margin: auto;
-  padding: 10px;
-  background-color: var(--c3) 80%;
-  color: var(--c1);
+  background-color: var(--c3RGB);
+  color: var(--c4);
 }
+
+.member {
+  padding: 5px;
+
+}
+
+.member img {
+  border-radius: 100%;
+}
+
 
 h2, h3 {
   text-align: center;
+  padding: 10px;
+  margin-bottom: 0;
+  margin-top: 1rem;
 }
 
-a:hover {
-  color: var(--c1);
-  background-color: var(--c4), 75% ;
-  border-radius: 15px;
+.nav-link:hover {
+  color: var(--c4);
 }
-/* .card {
-  background-color: hsl(0, 0%, 100%);
+
+.card {
+  background-color: white;
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  box-shadow:var(--c4) 0px 2px 8px 0px;
+  color: var(--c3);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px;
+  padding: 20px 20px;
 }
 
-.card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-body {
-  min-height: 100px;
-}
-
-.card-footer {
-  text-align: center;
-}
-
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-.btn {
-  border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+.footer-btn {
+  background-color: var(--c2);
+  color: var(--c1);
   display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 10px;
+  padding: 10px;
   text-align: center;
   cursor: pointer;
 }
 
+.footer-btn:hover {
+  color: var(--c4);
+}
+/*
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
@@ -123,27 +144,6 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
-#password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
-  resize: none;
-  overflow: hidden;
-} 
 
 @media (max-width: 690px) {
   .btn {
