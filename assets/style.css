@@ -120,9 +120,8 @@ footer {
   margin: auto;
   width: 100%;
   text-align: center;
-  padding: 15px;
   background-color: var(--c1);
-  color: var(--font);
+  color: var(--background);
 
 }
 
