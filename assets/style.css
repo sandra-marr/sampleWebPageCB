@@ -116,10 +116,12 @@ a:hover {
 
 .underline-2 {
   border-bottom: 5px solid var(--c2);
+  margin-top: 0;
 }
 
 .underline-3 {
   border-bottom: 5px solid var(--c3);
+  margin-top: 0;
 }
 
 .c1:hover {
