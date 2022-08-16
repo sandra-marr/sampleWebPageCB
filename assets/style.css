@@ -68,6 +68,7 @@ header {
   border-bottom: solid 2px var(--font);
   background-color: white;
   min-height: 10vh;
+  font-weight: 800;
 }
 
 h1 {
@@ -107,6 +108,7 @@ a:hover {
 .nav {
   justify-content: center;
   width:100%;
+  
 }
 
 .underline {
