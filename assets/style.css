@@ -85,9 +85,6 @@ img {
   width: auto !important;
 }
 
-.shadow-c2 {
-  box-shadow: 0 .125rem .25rem var(--c2);
-}
 
 #logo {
   height: auto;
@@ -119,7 +116,10 @@ a:hover {
 
 .underline-2 {
   border-bottom: 5px solid var(--c2);
-  margin
+}
+
+.underline-3 {
+  border-bottom: 5px solid var(--c3);
 }
 
 .c1:hover {
@@ -136,6 +136,10 @@ a:hover {
 
 .c4:hover {
   color: var(--c4)
+}
+
+#c-4 {
+  background-color: var(--c4);
 }
 
 .footer {
