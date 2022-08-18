@@ -5,11 +5,6 @@
   --c4: #FFC54D;
   --background: #FFFFFF;
   --font: #000000;
-
-  --c1v: rgb(83,191,157,.25);
-  --c2v: rgb(249,76,102,.15);
-  --c3v: rgb(189, 66, 145,.15);
-  --c4v: rgb(255, 197, 77,.15);
 }
 
 #page-container {
@@ -42,17 +37,12 @@
 html,
 body
 {
-  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: 'Merriweather', serif;
   /* font-family: 'Open Sans', sans-serif; */
   background-color: var(--background);
   color: var(--font);
-}
-
-main {
-  min-height: 80vh;
 }
 
 header {
@@ -64,6 +54,7 @@ header {
 
 h1 {
   padding-right: 10px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 960px) {
@@ -79,10 +70,9 @@ img {
 
 
 #logo {
-  height: auto;
-  width: 60px !important;
-  background-color: rgba(255,255,255);
-  box-shadow: 0px 0px 12px 12px rgba(255,255,255);
+  height: 50px;
+  width: auto;
+  background-color: var(--background);
   border-radius: 20%;
 }
 
@@ -98,7 +88,7 @@ a:hover {
 
 .nav {
   justify-content: center;
-  width:100%;
+  width: 100%;
   
 }
 
@@ -154,9 +144,32 @@ footer {
   margin: auto;
 }
 
-.member img {
-  border-radius: 3%;
+.border {
+  border-color: var(--c1) !important;
 }
+
+.border1 {
+  border-top: 1px solid var(--c1);
+  border-right: 1px solid var(--c1);
+  border-bottom: 1px solid var(--c1);
+}
+/* 
+.border2{
+  border-left: 1px solid var(--c1);
+} */
+
+@media (max-width: 767px) { 
+  .border1 {
+    border: none;
+    border-bottom: 1px solid var(--c1);
+    border-top: 1px solid var(--c1);
+  }
+
+  .border2 {
+    border: none;
+  }
+}
+
 
 
 h2, h3 {
@@ -164,20 +177,8 @@ h2, h3 {
   text-align: center;
   padding: 10px;
   margin: auto;
-  margin-bottom: .5rem;
+  margin-bottom: .75rem;
   margin-top: 1rem;
-}
-
-.card {
-  background-color: white;
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow:var(--c4) 0px 2px 8px 0px;
-  color: var(--c3);
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 20px 20px;
 }
 
 .footer-btn {
