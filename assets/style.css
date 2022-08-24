@@ -1,31 +1,10 @@
 :root {
-  --c1: #53BF9D;
-  --c2: #F94C66;
-  --c3: #BD4291;
-  --c4: #FFC54D;
-  --background: #FFFFFF;
-  --font: #000000;
-}
-
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
-  border-top: var(--background) solid 2px;
-}
-
-.hidden {
-  opacity: 0;
+  --c1: rgb(83, 191, 157);
+  --c2: rgb(249, 76, 102);
+  --c3: rgb(189, 66, 145);
+  --c4: rgb(255, 197, 77);
+  --white: #FFFFFF;
+  --black: #000000;
 }
 
 *,
@@ -40,13 +19,67 @@ body
   margin: 0;
   padding: 0;
   font-family: 'Merriweather', serif;
-  /* font-family: 'Open Sans', sans-serif; */
-  background-color: var(--background);
-  color: var(--font);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 4.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4.5rem;            /* Footer height */
+  border-top: var(--white) solid 2px;
+  background-color: var(--c1);
+  color: var(--white);
+  margin: 0;
+}
+
+.background-img {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url("./images/katie-rainbow-90bg59HzXxE-unsplash.jpeg");
+  width: auto;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 2px 2px 200px #000000;
+}
+
+.transparent-bg {
+  background-color: #ffffff00;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url("./images/katie-rainbow-90bg59HzXxE-unsplash.jpeg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 200px;
+}
+
+.footer {
+  background-color: var(--c1);
+  color: var(--white);
 }
 
 header {
-  border-bottom: solid 2px var(--font);
+  border-bottom: solid 2px var(--black);
   background-color: white;
   min-height: 10vh;
   font-weight: 900;
@@ -54,36 +87,32 @@ header {
 
 h1 {
   padding-right: 10px;
-  margin-bottom: 0;
 }
 
-@media (max-width: 960px) {
-  h1 {
+@media (max-width: 1052px) {
+  .hidden {
     display: none;
   }
 }
 
-img {
-  max-height: 250px;
-  width: auto !important;
+nav {
+  max-width: 100vw;
 }
 
 
-#logo {
-  height: 50px;
-  width: auto;
-  background-color: var(--background);
-  border-radius: 20%;
+img {
+  max-height: 300px;
+  width: auto !important;
 }
 
 a {
   text-decoration: none;
-  color: var(--font);
+  color: var(--black);
 }
 
 a:hover {
   text-decoration: none;
-  color: var(--font);
+  color: var(--black);
 }
 
 .nav {
@@ -93,17 +122,17 @@ a:hover {
 }
 
 .underline {
-  border-bottom: 5px solid var(--c1);
+  border-top: 5px solid var(--c1);
   margin-top: 0;
 }
 
 .underline-2 {
-  border-bottom: 5px solid var(--c2);
+  border-top: 5px solid var(--c2);
   margin-top: 0;
 }
 
 .underline-3 {
-  border-bottom: 5px solid var(--c3);
+  border-top: 5px solid var(--c3);
   margin-top: 0;
 }
 
@@ -127,25 +156,8 @@ a:hover {
   background-color: var(--c4);
 }
 
-.footer {
-  background-color: var(--c1);
-  color: var(--background);
-}
-
-footer {
-  margin: auto;
-  width: 100%;
-  text-align: center;
-  background-color: var(--c1);
-  color: var(--background);
-}
-
 .teamCardContainer {
   margin: auto;
-}
-
-.border {
-  border-color: var(--c1) !important;
 }
 
 .border1 {
@@ -153,10 +165,14 @@ footer {
   border-right: 1px solid var(--c1);
   border-bottom: 1px solid var(--c1);
 }
-/* 
-.border2{
-  border-left: 1px solid var(--c1);
-} */
+
+.border2 {
+  border-top: 1px solid var(--c2);
+  border-right: 1px solid var(--c2);
+  border-bottom: 1px solid var(--c2);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
 
 @media (max-width: 767px) { 
   .border1 {
@@ -167,17 +183,33 @@ footer {
 
   .border2 {
     border: none;
+    border-bottom: 1px solid var(--c2);
+    border-top: 1px solid var(--c2);
   }
 }
 
+.card-body {
+letter-spacing: .01rem;
+padding-left: 15%;
+padding-right: 15%;
+padding-bottom: 3rem !important;
+}
+
+.card-text {
+  padding: .5rem;
+}
 
 
 h2, h3 {
-  width: 50%;
+  width: 100%;
   text-align: center;
-  padding: 10px;
-  margin: auto;
-  margin-bottom: .75rem;
+  padding: 2rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+h5 {
+  margin-bottom: 1rem !important;
   margin-top: 1rem;
 }
 
@@ -194,5 +226,5 @@ h2, h3 {
 .titleFont {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: .25rem;
-  font-size: 2.75rem;
+  font-size: 4rem;
 }
