@@ -136,6 +136,11 @@ a:hover {
   margin-top: 0;
 }
 
+.underline-4 {
+  border-top: 5px solid var(--c4);
+  margin-top: 0;
+}
+
 .c1:hover {
   color: var(--c1)
 }
@@ -152,9 +157,9 @@ a:hover {
   color: var(--c4)
 }
 
-#c-4 {
+/* #c-4 {
   background-color: var(--c4);
-}
+} */
 
 .teamCardContainer {
   margin: auto;
