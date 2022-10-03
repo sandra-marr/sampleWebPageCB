@@ -43,34 +43,20 @@ body
   margin: 0;
 }
 
-.background-img {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url("./images/katie-rainbow-90bg59HzXxE-unsplash.jpeg");
-  width: auto;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  box-shadow: 2px 2px 200px #000000;
-}
-
-.transparent-bg {
-  background-color: #ffffff00;
-}
-
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url("./images/katie-rainbow-90bg59HzXxE-unsplash.jpeg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 1)), url("./images/HeroImage.jpeg");
 
   /* Set a specific height */
-  height: 50%;
+  height: 25%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: 200px;
+  padding-top: 100px;
+  width: 100vw;
 }
 
 .footer {
@@ -101,7 +87,7 @@ nav {
 
 
 img {
-  max-height: 300px;
+  max-height: 400px;
   width: auto !important;
 }
 
@@ -195,8 +181,8 @@ a:hover {
 
 .card-body {
 letter-spacing: .01rem;
-padding-left: 15%;
-padding-right: 15%;
+/* padding-left: 15%;
+padding-right: 15%; */
 padding-bottom: 3rem !important;
 }
 
