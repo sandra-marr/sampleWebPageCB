@@ -45,18 +45,18 @@ body
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 1)), url("./images/HeroImage.jpeg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 1)), url("./images/HeroImage.jpeg");
 
   /* Set a specific height */
-  height: 25%;
+  height: 10%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat:repeat-x;
+  background-size: contain;
   position: relative;
-  padding-top: 100px;
-  width: 100vw;
+  padding-top: 75px;
+  /* width: 100vw; */
 }
 
 .footer {
@@ -85,7 +85,6 @@ nav {
   max-width: 100vw;
 }
 
-
 img {
   max-height: 400px;
   width: auto !important;
@@ -104,7 +103,6 @@ a:hover {
 .nav {
   justify-content: center;
   width: 100%;
-  
 }
 
 .underline {
@@ -143,10 +141,6 @@ a:hover {
   color: var(--c4)
 }
 
-/* #c-4 {
-  background-color: var(--c4);
-} */
-
 .teamCardContainer {
   margin: auto;
 }
@@ -181,8 +175,6 @@ a:hover {
 
 .card-body {
 letter-spacing: .01rem;
-/* padding-left: 15%;
-padding-right: 15%; */
 padding-bottom: 3rem !important;
 }
 
